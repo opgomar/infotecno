@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(../fonts/Roboto-Thin.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(../fonts/Roboto-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(../fonts/Roboto-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(../fonts/Roboto-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(../fonts/Roboto-Black.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url(../fonts/Roboto-ThinItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(../fonts/Roboto-LightItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(../fonts/Roboto-Italic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(../fonts/Roboto-MediumItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(../fonts/Roboto-BoldItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url(../fonts/Roboto-BlackItalic.ttf) format('truetype');
+}
+
+h3 {
+	font-family: Roboto;
+	margin: 0px;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: auto;
+	background-color: white;
+	font-family: Roboto;
+	color: #000000;
+}
+
+button {
+	width: 180px;
+	
+	color: white;	
+}
+
+input[type="submit"] {
+	font-family: Roboto;
+	background-color: transparent;
+	background-image: url(../images/button.png);
+	border: none;
+	color: black;
+	width: 200px;
+	height: 48px;
+}
+
+input[type="submit"]:focus {
+	font-family: Roboto;
+	background-color: transparent;
+	background-image: url(../images/button-pressed.png);
+	border: none;
+	color: black;
+	width: 200px;
+	height: 48px;
+	 
+}
+
+input[type="submit"]:disabled {
+	font-family: Roboto;
+	background-color: transparent;
+	background-image: url(../images/button-disabled.png);
+	border: none;
+	color: gray;
+	width: 200px;
+	height: 48px;
+	 
+}
+
+input[type="text"], input[type="password"] {
+	width: 180px;
+	background-image: url(../images/text-field.png);
+	background-color: transparent;
+	height: 48px;
+	width: 288px;
+	border: none;
+	padding-left: 12px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+	width: 180px;
+	background-image: url(../images/text-field-activated.png);
+	height: 48px;
+	width: 288px;
+	border: none;
+	padding-left: 12px;
+}
+
+.tabs {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+.tab {
+	color: black;
+	float: left;
+	list-style: none;
+	width: 33.333%;
+	background-color: #303030;
+	background-image: url(../images/tab.png);
+	height: 48px;
+	line-height:48px;
+	text-align: center;
+}
+
+.tab a {
+	text-decoration: none;
+	color: black;
+}
+
+.tab-active {
+	text-decoration: none;
+	background-color: #303030;
+	background-image: url(../images/tab-selected.png);
+	color: white;
+	float: left;
+	list-style: none;
+	width: 33.333%;
+	height:48px;
+	line-height: 48px;
+	text-align: center;
+}
+
+.items {
+	padding: 0px;
+}
+
+.item {
+	list-style: none outside none;
+	height: 48px;
+	line-height: 48px;
+	padding-left: 7px;
+	width: 100%;
+	background-color: transparent;
+	background-image: url('../images/list-item.png');
+}
+
+.item a {
+	text-decoration: none;
+	color: #0713AE;
+}
+
+
+#content {
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+}
+
+form {
+	margin: 0px auto 0px auto;
+}
+
+#screen-header {
+	font-family: Roboto;
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	color: white;
+	background-image: url('../images/screen-header.png');
+	background-color: rgb(7, 19, 174);
+}
+
+#screen-header a {
+	font-family: Roboto;
+	text-decoration: none;
+	color: white;
+}
+
+p {
+	font-weight: 300;
+	margin: 0px;	
+	color: #0713AE;
+}
+
+.step {
+	color: #0713AE;
+	height: 48px;
+	padding-left: 7px;
+	width: 100%;
+	background-color: transparent;
+	background-image: url('../images/list-item.png');
+}
+
+.step a, .step a:visited {
+	text-decoration: none;
+	color: #0713AE;
+}
+
+.step .title {
+	font-size: 15px;
+}
+
+.step .desc {
+	font-size: 12px;
+}
+
+#logo {
+	width: 200px;
+	height: 200px;
+}
+
+#copyright {
+	color: black;
+	font-weight: bold;
+	font-size: 12px;
+}
