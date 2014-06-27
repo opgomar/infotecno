@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Iniciar Sesi&oacute;n</title>
+		<link type="text/css" rel="stylesheet" href="infotecno.css"/>
+	</head>
+	<body>
+		<div id="screen-header">
+			<h3>Tr&aacute;mites</h3>
+		</div>
+		<ul class="tabs">
+			<li class="tab"><a href="tramites.html">Tr&aacute;mites</a></li>
+			<li class="tab"><a href="anuncios.html">Anuncios</a></li>
+			<li class="tab"><a href="mapa.html">Mapa</a></li>
+		</ul><br>
+		<div id="content">
+		<form action="tramites.html">
+			<ul class="items">
+				<li class="item"><a href="Constancias.html">Constancias</a></li>
+				<li class="item"><a href="#">Servicios escolares</a></li>
+				<li class="item"><a href="#">Titulaci&oacute;n</a></li>
+				<li class="item"><a href="#">Residencia profesional</a></li>
+			</ul>
+		</form>
+		</div>
+		
+		<script>
+			tabs = document.getElementsByClassName("tabs")[0];
+			tramitesTab = tabs.getElementsByClassName("tab")[0];
+			tramitesTab.setAttribute("class", "tab-active");
+		</script>
+	</body>
+</html>
+

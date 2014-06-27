@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Iniciar Sesi&oacute;n</title>
+		<link type="text/css" rel="stylesheet" href="infotecno.css"/>
+	</head>
+	<body>
+		<div id="screen-header">
+			<h3>Anuncios</h3>
+		</div>
+		<ul class="tabs">
+			<li class="tab"><a href="tramites.html">Tr&aacute;mites</a></li>
+			<li class="tab"><a href="anuncios.html">Anuncios</a></li>
+			<li class="tab"><a href="mapa.html">Mapa</a></li>
+		</ul><br>
+		<div id="content">
+			<form action="tramites.html">
+			<ul class="items">
+				<li class="item"><a href="rentas.html">RENTAS</a></li>
+				<li class="item"><a href="comida.html">COMIDA</a></li>
+				<li class="item"><a href="entretenimiento.html">ENTRETENIMIENTO</a></li>
+				<li class="item"><a href="papeleria.html">PAPELER&Iacute;A</a></li>
+				<li class="item"><a href="electronica.html">ELECTR&Oacute;NICA</a></li>
+				<li class="item"><a href="anunciate.html">AN&Uacute;NCIATE...</a></li>
+			</ul>
+		</form>
+		</div>
+		
+		<script>
+			tabs = document.getElementsByClassName("tabs")[0];
+			anunciosTab = tabs.getElementsByClassName("tab")[1];
+			anunciosTab.setAttribute("class", "tab-active");
+		</script>
+		
+	</body>
+</html>
+
+
