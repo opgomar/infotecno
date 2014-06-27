@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <script type='text/javascript' src='../scripts/jquery.js'></script>
+	<title>BUSCADOR</title>
+<link rel="stylesheet" type="text/css" href="../css/apariencia.css" media="screen" />
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+var map;
+var arrmap = new Array();
+for( var i=0;i<6;i++){
+arrmap[i]= new Array();
+}
+
+arrmap[0][0]="tecno";
+arrmap[0][1]="18.652117";
+arrmap[0][2]="-99.18326";
+
+arrmap[1][0]="biblioteca";
+arrmap[1][1]="18.6530392";
+arrmap[1][2]="-99.1837866";
+
+arrmap[2][0]="direccion";
+arrmap[2][1]="18.6528035";
+arrmap[2][2]="-99.1837383";
+
+arrmap[3][0]="cua";
+arrmap[3][1]="18.6538175";
+arrmap[3][2]="-99.1840555";
+
+arrmap[4][0]="u";
+arrmap[4][1]="18.6542635";
+arrmap[4][2]="-99.1832338";
+
+arrmap[5][0]="financieros";
+arrmap[5][1]="18.652718";
+arrmap[5][2]="-99.183722";
+
+$(function(){
+$("#lupa").click(
+function()
+{
+var valor = $("#busca").val();
+buscar(valor);
+});
+});
+
+
+function buscar(e)
+{
+
+var b=e;
+for(var ii=0;ii<6;ii++)
+{
+
+if(arrmap[ii][0]==b){
+
+	  var mapOptions = {
+		zoom: 18,
+		center: new google.maps.LatLng(parseFloat(arrmap[ii][1]),parseFloat(arrmap[ii][2]))
+	  };
+	  map = new google.maps.Map(document.getElementById('map-canvas'),
+		  mapOptions);
+
+		  var marker = new google.maps.Marker({
+			  map: map,
+			  position: map.getCenter()
+			});
+			var infowindow = new google.maps.InfoWindow();
+			infowindow.setContent('<b>'+arrmap[ii][0]+'</b>');
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map, marker);
+			});
+		//google.maps.event.addDomListener(window, 'load', initialize);
+       }
+}
+}
+
+function initialize() {
+  var mapOptions = {
+    zoom: 18,
+    center: new google.maps.LatLng(18.652117,-99.18326)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+      var marker = new google.maps.Marker({
+	      map: map,
+	      position: map.getCenter()
+	    });
+	    var infowindow = new google.maps.InfoWindow();
+	    infowindow.setContent('<b>Instituto Tecnológico de Zacatepec</b>');
+	    google.maps.event.addListener(marker, 'click', function() {
+	        infowindow.open(map, marker);
+        });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+</head>
+<body>
+<div id="atras">
+			<a href="tramites.html">
+				<h3><&nbsp;&nbsp;ATRÁS</h3>
+			</a>
+</div>
+<div id="buscar">
+	<input type='text' id='busca'></input>
+</div>
+<div id='icono'>
+	<input type='image' id='lupa' src='../images/lupa-blanca.png'></input>
+</div>
+<div id='contenido'>
+	<div id="map-canvas">
+	</div>
+</div>
+</body>
+</html>

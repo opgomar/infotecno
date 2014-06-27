@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Iniciar Sesi&oacute;n</title>
+		<link type="text/css" rel="stylesheet" href="css/infotecno.css"/>
+		<script src="scripts/infotecno.js"></script>
+	</head>
+	<body>
+		<div id="screen-header">
+			<h3>InfoTecno</h3>
+		</div>
+		<center>
+		<form action="html/tramites.html">
+		<div id="content"><br>
+			<img id="logo" src="images/itz-.png" />
+			<br><br>
+			<p>N&uacute;mero de control</p>
+			<input id="control" type="text" value="" onkeyup="activateButton()"/>
+			<p>NIP</p>
+			<input id="pswd" type="password" value="" onkeyup="activateButton()"/><br><br>
+			<input id="login" type="submit" value="Acceder" disabled="true" onclick="return validateLogin()">
+		</form>
+		
+		<div id="copyright">
+			<br><br>
+			InfoTecno <br>
+			Copyright &copy; Todos los derechos reservados.
+		</div>
+		</center>
+		</div>
+	</body>
+</html>
